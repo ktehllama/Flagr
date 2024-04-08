@@ -17,7 +17,7 @@ into your file using the files in the [github repository](https://github.com/kte
 method (more info below in `method` section), enter its corresponding file and 
 paste the function somewhere in your code.
 
-__Single Flag__
+__Single Flag:__
 In the single flag, all you do is declare a flag with its name and that's it, later in your
 code you can do an action based on that flags declaration.
 ```bash
@@ -38,7 +38,7 @@ async def sayhi(ctx, *, args=None):
     await ctx.send(response)
 ```
 
-__Flags Storage Dictonary and Retrieving Values__
+__Flags Storage Dictonary and Retrieving Values:__
 _(These examples uses the flagr_main_default way to parse, more info in methods section below)_
 Before we get to the equals flag example, I want to explain what happens to the flags' themselves,
 where their names and values are stored.
@@ -75,7 +75,7 @@ So now you have a way to retrieve the information from any flag. In summary, all
 (which are None if its a single flag) are stored in a dictonary you can then access for retrieving values
 of an equals flag, or check if a certain flag exists and use it.
 
-__Equals Flag__
+__Equals Flag:__
 In the equals flag example, you declare a flag with its name but you can also add a `=` after it with
 a value, this will save it's value in the flags dictonary and you can retrive that value later.
 ```bash
@@ -99,7 +99,7 @@ async def hamburger(ctx, *, args=None):
 Remember, the value doesn't always have to be a number it can be anything, you could make a 
 flag such as `-hat_color=red`, if thats useful for you, of course. 
 
-__Importance of placement of *Args__
+__Importance of placement of *Args:__
 When using this in a Discord bot, remember always to add `*,args=None` to the parameters so
 it can capture all flags, as a side note make sure you capture other important information
 first such as if you want to capture a user.
