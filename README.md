@@ -5,7 +5,7 @@ Flagr is a Python flag system manager for text commands,
 either CLI, Discord bots or other.
 
 - Some Assembly Required
-- Easy to Start Using Aafter
+- Easy to Start Using After
 - 🔥 Have as many flags as you want 🔥
 
 ## Installation/Usage
